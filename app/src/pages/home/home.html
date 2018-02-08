@@ -1,14 +1,25 @@
 <ion-header>
-  <ion-navbar>
-    <ion-title>
+  <ion-toolbar>
+    <ion-title text-center>
       Alcis RIV
     </ion-title>
-  </ion-navbar>
+  </ion-toolbar>
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+  <p>Minim quis proident pariatur enim. Irure dolor magna in deserunt quis do reprehenderit eiusmod dolore proident nulla pariatur.
+    Eiusmod enim quis tempor sunt et proident. In ad id nulla est eiusmod incididunt eiusmod. Pariatur deserunt do est.</p>
+  <ion-grid>
+    <ion-row align-items-center justify-content-center>
+      <ion-col col-12 col-md-6 text-center>
+        <button ion-button small (click)="goBack()" color="light"><ion-icon name="barcode"></ion-icon>&nbsp;Código de barras</button>
+        <button ion-button small (click)="goBack()" color="dark"><ion-icon name="mic"></ion-icon>&nbsp;Speech</button>
+      </ion-col>
+    </ion-row>
+    <ion-row align-items-center justify-content-center>
+      <ion-col col-12 col-md-6 text-center>
+        <button ion-button small outline (click)="goBack()">Voltar</button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-content>

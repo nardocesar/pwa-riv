@@ -1,11 +1,17 @@
-<ion-content>
-  <h1 text-center>Alcis RIV</h1>
-  <ion-list no-lines>
-    <ion-item>
-      <ion-input type="number" placeholder="Entre com o PIN" text-center></ion-input>
-    </ion-item>
-    <ion-item>
-      <button ion-button large block outline>Entrar</button>
-    </ion-item>
-  </ion-list>
+<ion-content class="auto-scroll">
+  <ion-grid>
+    <ion-row align-items-center justify-content-center>
+      <ion-col col-12 col-sm-12 col-md-6>
+        <h1 text-center>Alcis RIV</h1>
+        <ion-list no-lines>
+          <ion-item>
+            <ion-input type="tel" placeholder="Entre com o PIN" text-center></ion-input>
+          </ion-item>
+          <ion-item>
+            <button ion-button large block outline (click)="login()">Entrar&nbsp;<ion-icon name="log-in"></ion-icon></button>
+          </ion-item>
+        </ion-list>
+      </ion-col>
+    </ion-row>
+  </ion-grid>  
 </ion-content>

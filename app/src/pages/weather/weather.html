@@ -1,0 +1,22 @@
+<ion-content class="auto-scroll">
+    <ion-grid>
+        <ion-row align-items-center justify-content-center>
+            <ion-col col-12 col-sm-12 col-md-6>
+                <h1 text-center>Clima em xpto</h1>
+                <ion-list no-lines>
+                    <ion-item text-center>
+                        <ion-icon name="partly-sunny" class="weather-icon"></ion-icon>
+                        <p class="temperatura">26°C</p>
+                        <p>Nublado</p>
+                    </ion-item>
+                </ion-list>
+                <ion-buttons text-center>
+                    <button ion-button outline color="danger" (click)="goBack()">
+                        <ion-icon name="close"></ion-icon>&nbsp;Alterar</button>
+                    <button ion-button (click)="toHome()">
+                        <ion-icon name="send"></ion-icon>&nbsp;Confirmar</button>
+                </ion-buttons>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+</ion-content>
